@@ -93,7 +93,8 @@ class MerqueoController extends AbstractController
                             }
                         }                                                
                     break;
-                    case 'menos_vendidos' || 'mas_vendidos':
+                    case 'menos_vendidos':
+                    case 'mas_vendidos':
                         foreach($productos as $key => $producto){
                             $result[$producto->getNombre()]['quantity'] = 0;
                             foreach($orders['orders'] as $key => $order){                                                                           
